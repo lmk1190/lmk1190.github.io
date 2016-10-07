@@ -4,47 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Simply Flat</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <!-- Heading 1, make a link and use "index.html" for href attribute value -->
-        <div>
-            <div>
-                <h1>
+    <div class="container">
+        <header class="row">
+            <!-- Heading 1, make a link and use "index.html" for href attribute value -->
+            <div class="one-third column">
+                <h1 class="brand">
                   <a href="index.html"> Simply Flat</a>
               </h1>
             </div>
-        </div>
 
-        <nav>
-            <!-- Unordered list -->
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <!-- Link, make href attribute value = "index.html" -->
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-                <!-- Link, make href attribute value = "about.html" -->
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <!-- Link, make href attribute value = "portfolio.html" -->
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <!-- Link, make href attribute value = "blog.html" -->
-                <li>
-                    <a href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <!-- Link, make href attribute value = "contact.html" -->
-        </nav>
-    </header>
+            <nav class="two-thirds column nav">
+                <!-- Unordered list -->
+                <ul class="pull-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- Link, make href attribute value = "index.html" -->
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!-- Link, make href attribute value = "about.html" -->
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!-- Link, make href attribute value = "portfolio.html" -->
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <!-- Link, make href attribute value = "blog.html" -->
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Link, make href attribute value = "contact.html" -->
+            </nav>
+        </header>
     <main>
-       <section>
+       <section class="container page-header">
              <!-- Heading 1 -->
             <h1>About Us</h1>
             
@@ -52,17 +53,21 @@
             <p>Vel tempor referrentur neglegentur cu, mel ut enim iudicabit intellegat, ea putent salutandi quo. Sonet putant graecis ut nec. Magna laoreet consequuntur vis referrentur neglegentur.
             </p>
         </section>
-        <section><!-- Heading 4 -->
-            <h4>There are many variations of passages Lorem Ipsum available, injected generators on the hidden.</h4>
-            
-            <!-- Paragraph -->
-            <p>Tempor admodum adipisci et cum, hinc solum expetendis usu no. Usu ut esse laoreet consequat. Sea mundi decore fastidii et, at mei laudem perfecto oportere, harum deserunt no est. Cum at idque iracundia, diam ceteros molestie vix ad.</p>
+        <section class="row"><!-- Heading 4 -->
+            <div class="one-whole column">
+               <img src="http://lorempixel.com/500/300/business/7" alt="Business" class="img-responsive">
+                <h4>There are many variations of passages Lorem Ipsum available, injected generators on the hidden.</h4>
+                
+                <!-- Paragraph -->
+                <p>Tempor admodum adipisci et cum, hinc solum expetendis usu no. Usu ut esse laoreet consequat. Sea mundi decore fastidii et, at mei laudem perfecto oportere, harum deserunt no est. Cum at idque iracundia, diam ceteros molestie vix ad.</p>
+            </div>
             </section>
-        <section>
+        <section class="row team container">
             <!-- Heading 1 -->
             <h1>Our Team</h1>
             
-           <div> <!-- Heading 3, make a link and use "#" for href attribute value -->
+           <div class="one-half column team-member"> <!-- Heading 3, make a link and use "#" for href attribute value -->
+               <img src="http://lorempixel.com/500/300/business/1" alt="Business" class="img-responsive">
                 <h3><a href="#">Jason Bourne</a></h3>
                 
                 <!-- Small -->
@@ -71,7 +76,8 @@
                 <!-- Paragraph -->
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
                 </div>
-           <div> <!-- Heading 3, make a link and use "#" for href attribute value -->
+           <div class="one-half column team-member"> <!-- Heading 3, make a link and use "#" for href attribute value -->
+               <img src="http://lorempixel.com/500/300/business/1" alt="Business" class="img-responsive">
                 <h3><a href="#">Jason Bourne</a></h3>
                 <!-- Small -->
                 <small>Chief Executive Officer / CEO</small>
@@ -79,7 +85,8 @@
                 <!-- Paragraph -->
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
                 </div>
-           <div> <!-- Heading 3, make a link and use "#" for href attribute value -->
+           <div class="one-half column team-member"> <!-- Heading 3, make a link and use "#" for href attribute value -->
+               <img src="http://lorempixel.com/500/300/business/1" alt="Business" class="img-responsive">
                 <h3><a href="#">Jason Bourne</a></h3>
                 
                 <!-- Small -->
@@ -88,8 +95,9 @@
                 <!-- Paragraph -->
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
                 </div>
-           <div>
+           <div class="one-half column team-member">
                  <!-- Heading 3, make a link and use "#" for href attribute value -->
+                 <img src="http://lorempixel.com/500/300/business/1" alt="Business" class="img-responsive">
                 <h3><a href="#">Jason Bourne</a></h3>
                 
                 <!-- Small -->
@@ -100,49 +108,51 @@
             </div>
         </section>
     </main>
-        <footer>
-        <div>
-            <!-- Heading 4 -->
-            <h4>Simply Flat</h4>
-            
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.</p>
-        </div>
+         <footer class="row">
+            <div class="one-third column">
+                <!-- Heading 4 -->
+                <h4>Simply Flat</h4>
 
-        <div>
-            <!-- Heading 4 -->
-            <h4>Testimonials</h4>
-            
-            <!-- Paragraph -->
-            <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
-            </p>
-        </div>
-
-       <div>
-             <!-- Heading 4 -->
-            <h4>Contact Us</h4>
-            
-            <!-- Unordered List, make the URL a link and use "#" for href attribute value-->
-            <ul>
-                <li>5B Streat, City 50987</li>
-                <li>info@example.com</li>
-                <li> 1.541.258.2881</li>
-                <li>1.541.854.8412</li>
-                <li><a href="#">http://www.example.com</a></li>
-            </ul>
-        </div>
-
-        <div><!-- Heading 4 -->
-            <h4>We're Social</h4>
+                <!-- Paragraph -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.</p>
             </div>
-        <!-- Social media icons go here - You will add them later -->
-<div>
-            <!-- Paragraph -->
-            <p>&copy; 2013 Simply Flat</p>
+
+            <div class="one-third column">
+                <!-- Heading 4 -->
+                <h4>Testimonials</h4>
+
+                <!-- Paragraph -->
+                <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
+                </p>
+            </div>
+
+            <div class="one-third column">
+                <!-- Heading 4 -->
+                <h4>Contact Us</h4>
+
+                <!-- Unordered List, make the URL a link and use "#" for href attribute value-->
+                <ul>
+                    <li>5B Streat, City 50987</li>
+                    <li>info@example.com</li>
+                    <li> 1.541.258.2881</li>
+                    <li>1.541.854.8412</li>
+                    <li><a href="#">http://www.example.com</a></li>
+                </ul>
+            </div>
+
+            <div class="one-whole column">
+                <!-- Heading 4 -->
+                <h4 class="social">We're Social</h4>
+            </div>
+            <!-- Social media icons go here - You will add them later -->
+            <div class="one-half column">
+                <!-- Paragraph -->
+                <p>&copy; 2013 Simply Flat</p>
+            </div>
+            <div class="one-half column">
+                <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
+                <p>Theme by <a href="#">Northify</a></p>
+            </div>
+        </footer>
     </div>
-       <div>
-             <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
-            <p>Theme by <a href="#">Northify</a></p>
-        </div>
-    </footer>
 </body>
