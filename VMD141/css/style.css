@@ -7,6 +7,33 @@ html {
 *:after {
     box-sizing: inherit;
 }
+/*Content Box*/
+.contentbox {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+.contentbox li {
+    color: #373737;
+}
+.contentbox-beige {
+    background-color: #f9f8f8;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+.contentbox-beige>img {
+    float:left;
+    margin-right:15px;
+}
+.contentbox-turquoise {
+    background-color: #4cd2da;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+.contentbox>img {
+    float: left;
+    margin-right: 15px;
+}
 /*GRID RULES*/
 .container {
     width: 960px;
@@ -27,6 +54,9 @@ html {
 .three-quarters {
     width: 700px;
 }
+.one-quarter {
+    width: 220px
+}
 .one-half {
     width: 460px;
 }
@@ -35,6 +65,9 @@ html {
 }
 .one-third {
     width: 300px;
+}
+.one-quater {
+    width: 220px;
 }
 .one-sixth {
     width: 140px;
@@ -58,6 +91,8 @@ ul {
 }
 /* Main content*/
 .page-header {
+    background-color: #5adae2;
+    color: #fff;
     padding-top: 30px;
     margin-bottom: 50px;
 }
@@ -68,9 +103,16 @@ ul {
 .page-header.home {
     margin-bottom: 0;
 }
+.home h1 {
+    color: #fff
+}
 .message {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #4cd2da;
+}
+.message h3 {
+    color: #fff;
 }
 .main-content-top h1 {
     padding-top: 70px;
@@ -81,6 +123,14 @@ ul {
 }
 .blog-tease {
     height: 210px;
+    color: #fff;
+}
+.blog-tease h2 {
+    
+}
+.blog-tease>img {
+    float:left;
+    
 }
 /* ABOUT*/
 .team h1 {
@@ -132,4 +182,43 @@ ul {
 /*Footer CSS */
 .social {
     text-align: center;
+}
+body {
+    background-color: #999;
+}
+h1,
+h2,
+h3 { color: }
+.header {
+    background-color: #373737;
+}
+.main {
+    background-color: #edecea;
+}
+.footer {
+    background-color: #373737;
+}
+.footer h4 {
+    color: #fff
+}
+.footer p{
+    color: #999;
+}
+.footer-bottom {
+    background-color: #1e1f1f;
+    color: #fff;
+}
+.footer-bottom p {
+    color: #999;
+}
+.footer ul li {
+    color: #999;
+}
+a {
+    color: #fff;
+}
+.title {
+    background-color: #5adae2;
+    color: #fff;
+    
 }
