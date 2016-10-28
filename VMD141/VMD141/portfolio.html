@@ -2,172 +2,239 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="https://use.fontawesome.com/08174a6492.js"></script>
+
     <meta charset="UTF-8">
     <title>Simply Flat</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="https://use.fontawesome.com/08174a6492.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- Heading 1, make a link and use "index.html" for href attribute value -->
-        <div>
-            <div>
-                <h1>
-                  <a href="index.html">Simply Flat</a>
+    <div class="container">
+        <header class="row header">
+            <!-- Heading 1, make a link and use "index.html" for href attribute value -->
+            <div class="one-third column">
+                <h1 class="brand">
+                  <a href="index.html"> Simply Flat</a>
               </h1>
             </div>
-        </div>
 
-        <nav>
-            <!-- Unordered list -->
-            <ul><a href="index.html">Home</a>
-                <!-- Link, make href attribute value = "index.html" -->
-                <a href="about.html">About Us</a>
-                <!-- Link, make href attribute value = "about.html" -->
-                <a href="portfolio.html">Portfolio</a>
-                <!-- Link, make href attribute value = "portfolio.html" -->
-                <a href="blog.html">Blog</a>
-                <!-- Link, make href attribute value = "blog.html" -->
-                <a href="contact.html">Contact Us</a></ul>
-            <!-- Link, make href attribute value = "contact.html" -->
-        </nav>
-    </header>
-    <main>
-        <!-- Heading 1 -->
-        <h1>Portfolio</h1>
+            <nav class="two-thirds column nav">
+                <!-- Unordered list -->
+                <ul class="pull-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <!-- Link, make href attribute value = "index.html" -->
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!-- Link, make href attribute value = "about.html" -->
+                    <li class="active">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <!-- Link, make href attribute value = "portfolio.html" -->
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <!-- Link, make href attribute value = "blog.html" -->
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Link, make href attribute value = "contact.html" -->
+            </nav>
+        </header>
+        <main class="main">
+            <section class="container row page-header home">
+                <!-- Heading 1 -->
+                <h1>Portfolio</h1>
 
-        <!-- Paragraph -->
-        <p>Vel tempor referrentur neglegentur cu, mel ut enim iudicabit intellegat, ea putent salutandi quo. Sonet putant graecis ut nec. Magna laoreet consequuntur vis referrentur neglegentur.</p>
+                <!-- Paragraph -->
+                <p>Vel tempor referrentur neglegentur cu, mel ut enim iudicabit intellegat, ea putent salutandi quo. Sonet putant graecis ut nec. Magna laoreet consequuntur vis referrentur neglegentur.</p>
+            </section>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/1", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/1" alt="Technical"> Hover Style
+            <section class="row">
+                <div class="column one-half">
+                    <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/1", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/1" alt="Technical" class="img-responsive">
+                        <div class="portfolio-title">
+                            <h2>Hover Style</h2>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/2", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/2" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                    <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/2", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/2" alt="Technical" class="img-responsive">
+                        <!-- Heading 2 -->
+                        <div class="portfolio-title">
+                            <h2>Hover Style</h2>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                   <div class="portfolio-item">
+                       
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/3", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/3" alt="Technical" class="img-responsive">
+                        <div class="portfolio-title">
+                            <!-- Heading 2 -->
+                            <h2>Hover Style</h2>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/3", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/3" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
 
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
+                     <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/4", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/4" alt="Technical" class="img-responsive">
+                        <div class="portfolio-title">
+                            <!-- Heading 2 -->
+                            <h2>Hover Style</h2>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/4", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/4" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column one-half">
+                    <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/5", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/5" alt="Technical" class="img-responsive">
+                        <!-- Heading 2 -->
+                        <div class="portfolio-title">
+                            <h2>Hover Style</h2>
 
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/5", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/5" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/6", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/6" alt="Technical" class="img-responsive">
+                        <!-- Heading 2 -->
+                        <div class="portfolio-title">
+                            <h2>Hover Style</h2>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/7", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/7" alt="Technical" class="img-responsive">
+                        <!-- Heading 2 -->
+                        <div class="portfolio-title">
+                            <h2>Hover Style</h2>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/6", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/6" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
 
-        <a href="#">Read More</a>
+                    <div class="portfolio-item">
+                        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/8", enter "Technical" for alt attribute value -->
+                        <img src="http://lorempixel.com/460/307/technics/8" alt="Technical" class="img-responsive">
+                        <!-- Heading 2 -->
+                        <div class="portfolio-title">
+                            <h2>Hover Style</h2>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/7", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/7" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                            <!-- Paragraph -->
+                            <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.
+                            </p>
+                            <!-- Link, use "#" for href attribute value -->
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="row">
+                <div class="one-third column">
+                    <!-- Heading 4 -->
+                    <h4>Simply Flat</h4>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.</p>
+                    <!-- Paragraph -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.</p>
+                </div>
 
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
+                <div class="one-third column">
+                    <!-- Heading 4 -->
+                    <h4>Testimonials</h4>
 
-        <!-- Image, path to image is "http://lorempixel.com/460/307/technics/8", enter "Technical" for alt attribute value -->
-        <img src="http://lorempixel.com/460/307/technics/8" alt="Technical">
-        <!-- Heading 2 -->
-        <h2>Hover Style</h2>
+                    <!-- Paragraph -->
+                    <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
+                    </p>
+                </div>
 
-        <!-- Paragraph -->
-        <p>Vel ei melius corrumpit. Et paulo aliquip cum. Dicit aperiam mel an, an eos delenit suavitate, eos alia audire no. Graeci aliquip ad cum.
-        </p>
-        <!-- Link, use "#" for href attribute value -->
-        <a href="#">Read More</a>
-    </main>
-    <footer>
-        <div>
-            <!-- Heading 4 -->
-            <h4>Simply Flat</h4>
-            
-            <!-- Paragraph -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit.</p>
-        </div>
+                <div class="one-third column">
+                    <!-- Heading 4 -->
+                    <h4>Contact Us</h4>
 
-        <div>
-            <!-- Heading 4 -->
-            <h4>Testimonials</h4>
-            
-            <!-- Paragraph -->
-            <p>Consectetur adipiscing elit. Pellentesque eu posuere leo. Pellentesque a lobortis erat. Maecenas vel metus vitae urna sollicitudin eleifend a vel elit. LouEtta
-            </p>
-        </div>
+                    <!-- Unordered List, make the URL a link and use "#" for href attribute value-->
+                    <ul>
+                        <li><i class="fa fa-home"></i> 5B Streat, City 50987</li>
+                        <li><i class="fa fa-envelope"></i>info@example.com</li>
+                        <li> <i class="fa fa-phone-square"></i>1.541.258.2881</li>
+                        <li><i class="fa fa-print"></i>1.541.854.8412</li>
+                        <li><i class="fa fa-globe"></i><a href="#">http://www.example.com</a></li>
+                    </ul>
+                </div>
 
-       <div>
-             <!-- Heading 4 -->
-            <h4>Contact Us</h4>
-            
-            <!-- Unordered List, make the URL a link and use "#" for href attribute value-->
-            <ul>
-                <li>5B Streat, City 50987</li>
-                <li>info@example.com</li>
-                <li> 1.541.258.2881</li>
-                <li>1.541.854.8412</li>
-                <li><a href="#">http://www.example.com</a></li>
-            </ul>
-        </div>
-
-        <div><!-- Heading 4 -->
-            <h4>We're Social</h4>
+                <div class="one-whole column">
+                    <!-- Heading 4 -->
+                    <h4 class="social">We're Social</h4>
+                    <ul class="social-list">
+                        <li><a href="#"><i class="fa fa-facebook fa-2x"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-2x"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-2x"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-pinterest fa-2x"></i> </a></li>
+                        <li><a href="#"><i class="fa fa-google-plus fa-2x"></i> </a></li>
+                    </ul>
+                </div>
             </div>
-        <!-- Social media icons go here - You will add them later -->
-<div>
-            <!-- Paragraph -->
-            <p>&copy; 2013 Simply Flat</p>
+            <div class="row footer-bottom">
+                <!-- Social media icons go here - You will add them later -->
+                <div class="one-half column">
+                    <!-- Paragraph -->
+                    <p>&copy; 2013 Simply Flat</p>
+                </div>
+                <div class="one-half column">
+                    <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
+                    <p>Theme by <a href="#">Northify</a></p>
+                </div>
+            </div>
+        </footer>
     </div>
-       <div>
-             <!-- Paragraph, make "Northify" a link and use "#" for href attribute value -->
-            <p>Theme by <a href="#">Northify</a></p>
-        </div>
-    </footer>
 </body>
-
-</html>
