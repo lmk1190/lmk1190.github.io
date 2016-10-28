@@ -55,7 +55,7 @@ html {
     width: 700px;
 }
 .one-quarter {
-    width: 220px
+    width: 220px;
 }
 .one-half {
     width: 460px;
@@ -95,6 +95,7 @@ ul {
     color: #fff;
     padding-top: 30px;
     margin-bottom: 50px;
+    padding-bottom: 70px;
 }
 .page-header p {
     padding-left: 15px;
@@ -102,9 +103,11 @@ ul {
 /*Home Page */
 .page-header.home {
     margin-bottom: 0;
+    font-size: 180x;
+    font-weight: 200px;
 }
 .home h1 {
-    color: #fff
+    color: black;
 }
 .message {
     padding-top: 60px;
@@ -185,12 +188,121 @@ portfolio-title:hover {
     padding-right: 10px;
     padding-bottom: 10px;
 }
+
+
 /*CONTACT*/
 .table,
 .form p;
 .map h2 {
     margin-left: 15px;
 }
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding-top: 25px;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #373737;
+    -webkit-border-radius: 4px; /* for rounded corners */
+    -mox-border-radius: 4px;
+    border-radius: 4px;  
+}
+.contact-form input {
+    width: 445px;
+}
+.contact-form textarea {
+    width: 445px;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    color: #373737;
+    -webkit-border-radius: 4px; /* for rounded corners */
+    -mox-border-radius: 4px;
+    border-radius: 4px;  
+    
+}
+input[type="submit"].btn {
+    border: 0 none;
+    padding-top:0; 
+    padding-right: 22px;
+    padding-bottom: 0;
+    padding-left: 22px;
+    margin-top: 10px;
+   color: #fff;
+    height: 50px;
+    width: 150px;
+    -webkit-transition: background .5s ease 0s;
+    -moz-border-radius: background .5s ease 0s;
+    -transition: background .5s ease 0s;
+}
+.sidebar-form input[type="text"] {
+    height: 30px;
+    width: 125px;
+    padding: 0;
+    margin-bottom: 2px;
+    -webkit-border-radius: 4px; /* for rounded corners */
+    -mox-border-radius: 4px;
+    border-radius: 4px;  
+    
+}
+.sidebar-form .btn {
+    height: 30px;
+    padding: 0 10px /* top bottom left right */
+    border: 0 none; /* override what is in button */
+    -webkit-border-radius: 0; /* for rounded corners */
+    -mox-border-radius: 0;
+    border-radius: 0;  
+    -webkit-transition: background .5s ease 0s;
+    -moz-border-radius: background .5s ease 0s;
+    -transition: background .5s ease 0s;
+}
+.form p {
+    margin-bottom: 20px;
+}
+.contact-table {
+    width: 99%;
+    margin-bottom: 50px;
+}
+.contact-table caption {
+    color: #373737;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 200;
+}
+.contact-table th {
+    text-align: left;
+    background-color: white;
+    color: #373737;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.contact-table td {
+    color: #373737;
+   padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.contact-table tr:nth-child(odd) {
+    background-color: #f9f8f8;
+}
+.content-table tr:hover {
+    background-color: #999;
+    cursor: crosshair;   
+}
+
+
 
 /* Header CSS */
 .brand {
@@ -207,12 +319,12 @@ portfolio-title:hover {
 .social {
     text-align: center;
 }
-body {
-    background-color: #999;
 }
 h1,
 h2,
-h3 { color: }
+h3 {
+    color: black; 
+}
 .header {
     background-color: #373737;
 }
@@ -248,11 +360,15 @@ a {
     color: #fff;
     
 }
+
+
+
 /*Global Rules */
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.5;
+    background-color: #999;
 }
 h1 {
     font-size: 38px;
@@ -263,9 +379,12 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 h4 {
     font-size: 18px;
+    margin-top: 
 }
 p {
     font-size: 18px;
@@ -278,7 +397,11 @@ ul {
     padding: 0;
     margin: 0
 }
+.text-center {
+    text-align: center;
 }
+
+
 /*Classes and compound selectors */
 .brand {
     font-size: 22px;
@@ -309,15 +432,14 @@ ul {
     color: #5adae2;
     background-color: #1e1f1f;
 }
-
-
 .main-content-top i {
     color: #5adae2;
     vertical-align: -10px; /*Center icon to heading*/
 }
 .page-header h1 {
     font-weight: bold;
-    text-align: center;
+    padding-left: 15px;
+    color: black;
 }
 .page-header p {
     font-size: 26px;
@@ -325,6 +447,7 @@ ul {
 .page-header.home h1 {
     font-weight: normal;
     text-align: center;
+    color: #fff;
 }
 .page-header.home p {
     font-size: 18px;
@@ -380,10 +503,11 @@ ul {
     color: #5adae2;
 }
 .tile {
+    background-color: #5adae2;
+    color: #fff;
     margin: 0 0 5px 5px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    display: inline-block;
 }
 .tile p {
     margin: 0;
@@ -446,10 +570,13 @@ ul {
     font-size: 14px;
 }
 
+
+
+
 /*button */
 .btn {
     display: inline-block;
-  font-size: 14px;
+    font-size: 14px;
     background-color: #0b676b;
     color:#fff;
     padding: 15px 20px;
@@ -468,4 +595,5 @@ ul {
 .btn >i {
     color: #fff;
 }
+
 /* */
