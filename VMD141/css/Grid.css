@@ -106,7 +106,12 @@ margin-left: auto;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-}
+    .container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
 .column {
     float: left;
     margin-right: 10px;
@@ -114,7 +119,6 @@ margin-left: auto;
 }
 .row {
     overflow:hidden;
-}
 }
 .one-whole {
     width: 940px;
@@ -145,4 +149,5 @@ margin-left: auto;
 }
 .omega {
      margin-right: 0;
+}
 }

@@ -1,19 +1,109 @@
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding-top: 25px;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #373737;
+    -webkit-border-radius: 4px; /* for rounded corners */
+    -mox-border-radius: 4px;
+    border-radius: 4px;  
+}
+.contact-form input {
+    width: 300px;
+}
+.contact-form textarea {
+    width: 300px;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    color: #373737;
+    -webkit-border-radius: 4px; /* for rounded corners */
+    -mox-border-radius: 4px;
+    border-radius: 4px;  
+    
+}
+input[type="submit"].btn {
+    border: 0 none;
+    padding-top:0; 
+    padding-right: 22px;
+    padding-bottom: 0;
+    padding-left: 22px;
+    margin-top: 10px;
+   color: #fff;
+    height: 50px;
+    width: 150px;
+    -webkit-transition: background .5s ease 0s;
+    -moz-border-radius: background .5s ease 0s;
+    -transition: background .5s ease 0s;
+}
+.form {
+    margin: 20px 0;
+}
+    
+.form p {
+    margin-bottom: 20px;
+}
 /* Smartphone landscape */
 @media (min-width: 480px) {
 
+.contact-form input,
+.contact-form submit,
+.contact-form textarea {
+width: 420px;
+}
 
 }
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) {.table,
 
-
+}
+.contact-form input, 
+.contact-form submit,
+.contact-form textarea {
+width: 360px;
+}
+            /* for blog */
+.sidebar-form input[type="text"] {
+    height: 30px;
+    width: 125px;
+    padding: 0;
+    margin-bottom: 2px;
+    -webkit-border-radius: 4px 0 0 4px; /* for rounded corners */
+    -mox-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;  
+}
+.sidebar-form .btn {
+    height: 30px;
+    padding: 0 10px /* top bottom left right */
+    border: 0 none; /* override what is in button */
+    -webkit-border-radius: 0; /* for rounded corners */
+    -mox-border-radius: 0;
+    border-radius: 0;  
+    -webkit-transition: background .5s ease 0s;
+    -moz-border-radius: background .5s ease 0s;
+    -transition: background .5s ease 0s;
+}
 }
 
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+.contact-form input, 
+.contact-form submit,
+.contact-form textarea {
+width: 445px;
+}
 
 }

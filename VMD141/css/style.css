@@ -1,22 +1,10 @@
-@import url(grid.css);
-@import url(form.css);
+@import url(Grid.css);
+@import url(Form.css);
 @import url(table.css);
 /* Smartphone landscape */
-@media (min-width: 480px) {
 
 
-}
 
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-
-}
-
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
 /*BOX SIZING*/
 html {
     box-sizing: border-box;
@@ -56,11 +44,7 @@ html {
 }
 
 /*GRID RULES*/
-.container {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 .column {
     float: left;
     margin-right: 10px;
@@ -68,36 +52,6 @@ html {
 }
 .row {
     overflow:hidden;
-}
-.one-whole {
-    width: 940px;
-}
-.three-quarters {
-    width: 700px;
-}
-.one-quarter {
-    width: 220px;
-}
-.one-half {
-    width: 460px;
-}
-.two-thirds {
-    width: 620px;
-}
-.one-third {
-    width: 300px;
-}
-.one-quater {
-    width: 220px;
-}
-.one-sixth {
-    width: 140px;
-}
-.alpha {
-    margin-left: 0;
-}
-.omega {
-    margin-right: 0;
 }
 nav ul li {
     display: inline-block;
@@ -170,26 +124,6 @@ ul {
     margin-bottom: 20px;
 }
 /* PORTFOLIO*/
-.portfolio-item {
-    margin-bottom: 10px;
-    position: relative;
-}
-.portfolio-title {
-         color: white;
-        text-align: center;
-        height: 243px;
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        opacity: 0;
-  padding: 10px;
-        -webkit-transition: opacity 0.3s ease 0s;
-        -moz-transition: opacity 0.3s ease-out;
-        -ms-transition: opacity 0.3s ease-out;
-        -o-transition: opacity 0.3s ease-out;
-        transition: opacity 0.3s ease 0s;
-}
 portfolio-title:hover {
     background-color: #5adae2;
     opacity: .9;
@@ -202,35 +136,10 @@ portfolio-title:hover {
 }
 /* BLOG PAGE*/
 
-.sidebar-form input[type="text"] {
-    height: 30px;
-    width: 125px;
-    padding: 0;
-    margin-bottom: 2px;
-    -webkit-border-radius: 4px 0 0 4px; /* for rounded corners */
-    -mox-border-radius: 4px 0 0 4px;
-    border-radius: 4px 0 0 4px;  
-}
-.sidebar-form .btn {
-    height: 30px;
-    padding: 0 10px /* top bottom left right */
-    border: 0 none; /* override what is in button */
-    -webkit-border-radius: 0; /* for rounded corners */
-    -mox-border-radius: 0;
-    border-radius: 0;  
-    -webkit-transition: background .5s ease 0s;
-    -moz-border-radius: background .5s ease 0s;
-    -transition: background .5s ease 0s;
-}
 .info li {
     display: inline-block;
 }
-.sidebar {
-    padding: 30px;
-}
-.recent-entries img {
-    float: left;
-    padding-right: 10px;
+
 }
 .photos img {
     padding-right: 10px;
@@ -250,6 +159,7 @@ portfolio-title:hover {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 200;
+    margin-bottom: 10px;
 }
 .contact-table th {
     text-align: left;
@@ -260,11 +170,6 @@ portfolio-title:hover {
     padding-bottom: 5px;
     padding-left: 5px;
 }
-.contact-table td {
-    color: #373737;
-   padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
 }
 .contact-table tr:nth-child(odd) {
     background-color: #f9f8f8;
@@ -523,6 +428,7 @@ ul {
 .address li {
     padding-bottom: 5px;
 }
+
 .info li {
     font-size: 14px;
     background-color: #edecea;
@@ -576,6 +482,10 @@ ul {
 }
 
 /* */
+@media (min-width: 480px) {
+
+
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	/* ... paste updated global rules here ... */
@@ -588,7 +498,7 @@ ul {
         width: 344px;
     }
           
-    /* Portfolio */ NOTE: Delete the portfolio hover styles from the top of the CSS file so that they aren't rendering on small devices.
+    /* Portfolio */ 
     .portfolio-item {
         position: relative;
         margin-bottom: 10px;
@@ -617,15 +527,41 @@ ul {
         opacity: .9;
         background-color: #5adae2;
     }
-
+    /* blog page */
+    .sidebar-form input[type="text"] {
+        height: 30px;
+        width: 125px;
+        padding: 0;
+        margin-bottom: 2px;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+        border-radius: 4px 0 0 4px;
+    }
+    
+    .sidebar-form .btn {
+        height: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: 0 none;
+        -webkit-transition: background 0.5s ease 0s;
+        -moz-transition: background 0.5s ease 0s;
+        transition: background 0.5s ease 0s;
+    }
+    .recent-entries img {
+    float: left;
+    padding-right: 10px;
+    }
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	/* ... place updated global rules here ... */
 
-
-
-
-/* Global */ 
+    /* Global */ 
 .contentbox .one-half {
 width: 440px;
 }
@@ -640,5 +576,11 @@ height: 308px;
     .portfolio-title h2 {
         margin-top: 40px;
     }
+     /* blog*/ 
+     .sidebar {
+        padding: 30px;
+    }
 
+    
+}
 
