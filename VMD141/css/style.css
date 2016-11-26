@@ -53,9 +53,7 @@ html {
 .row {
     overflow:hidden;
 }
-nav ul li {
-    display: inline-block;
-}
+
 ul {
     list-style: none;
     padding: 0;
@@ -186,9 +184,7 @@ portfolio-title:hover {
     padding-top: 45px;
     padding-bottom: 45px;
 }
-.nav {
-    padding-top: 60px;
-}
+
 .pull-right {
     float: right;
 }
@@ -287,21 +283,7 @@ ul {
 .brand {
     font-size: 22px;
 }
-.nav li {
-    float: none;
-    font-size: 18px;
-    border-right: 1px solid #dedede;
-}
-.nav li:last-child {
-    border-right: 0 none;
-}
-.nav a {
-    padding: 0px 10px;
-    transition: color .03s ease-in-out;
-}
-.nav a:hover {
-    color: #5adae2;
-}
+
 .active a {
     color: #5adae2;
 }
@@ -456,8 +438,6 @@ ul {
 }
 
 
-
-
 /*button */
 .btn {
     display: inline-block;
@@ -481,7 +461,69 @@ ul {
     color: #fff;
 }
 
-/* */
+/* Google Maps*/
+
+.map iframe {
+    width: 100%
+}
+
+/* Mobile navigation */
+.menu-link {
+    position: absolute;
+    right: 50px; /* adjust this value if need be */
+    top: 60px; /* adjust this value if need be */
+}
+
+
+.nav {
+    -webkit-transition: all 0.3s ease-out;  
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0; /* zero height so nav is hidden */
+}
+
+
+.nav.active {
+    max-height: 25em; /* after menu click, nav expands */
+}
+.nav.active a {
+    color: #fff;
+}
+
+
+.nav ul {
+    width: auto;
+}
+.nav li {
+    display: inline-block;
+    float: none;
+    border: 0 none;
+    border-right: 1px solid #dedede;  /* gray */
+}
+
+
+.nav li:last-child {
+ border-bottom: 0 none; /* gray */
+ border-right: 0 none;
+}
+
+
+.nav a {
+    display: block;
+    padding: 15px;
+}
+
+
+.nav a:hover,
+.nav a:focus {
+    color: #5ADAE2;  /* turquoise */
+    background-color: transparent;
+}
+
+
 @media (min-width: 480px) {
 
 
@@ -489,9 +531,6 @@ ul {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	/* ... paste updated global rules here ... */
-
-
-
 
 /* Global */
     .contentbox .one-half {
@@ -519,8 +558,7 @@ ul {
         -ms-transition: opacity 0.3s ease-out;
         -o-transition: opacity 0.3s ease-out;
         transition: opacity 0.3s ease 0s;
-        
-    }
+  }
     
     .portfolio-title:hover,
     .portfolio-title:focus {
@@ -552,11 +590,53 @@ ul {
         -moz-transition: background 0.5s ease 0s;
         transition: background 0.5s ease 0s;
     }
+    .sidebar {
+        padding: 10px;
+    }
     .recent-entries img {
     float: left;
     padding-right: 10px;
     }
+    nav ul li {
+    display: inline-block;
 }
+    .nav {
+    padding-top: 60px;
+     max-height: none;
+}
+    .nav ul {
+        width: auto;
+    }
+  .nav li {
+display: inline-block;
+border: 0 none;
+border-right: 1px solid #dedede;  /* gray */
+}
+.nav li:last-child {
+border-bottom: 0 none;
+border-right: 0 none;
+}
+.nav a {
+    padding: 0px 10px;
+    transition: all .15 ease-in-out;
+}
+.nav a:hover {
+    color: #5adae2;
+    background-color: transparent;
+}
+.nav a:hover,
+.active a {
+    color: #5ADAE2;  /* turquoise */
+    background-color: transparent;
+}
+    /* mobile nave */
+    .menu-link {
+        display: none;
+    }
+}
+
+
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	/* ... place updated global rules here ... */
@@ -565,7 +645,6 @@ ul {
 .contentbox .one-half {
 width: 440px;
 }
-
 
     /* Portfolio */ 
 
@@ -577,10 +656,13 @@ height: 308px;
         margin-top: 40px;
     }
      /* blog*/ 
-     .sidebar {
+.sidebar {
         padding: 30px;
     }
-
+    .map iframe {
+        width: 620px;
+        height: 350px;
+    }
     
 }
 
