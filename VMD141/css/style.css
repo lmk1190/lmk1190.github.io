@@ -523,14 +523,15 @@ ul {
     color: #fff;
 }
 .nav ul {
-    width: auto;
+    width: 100%;
 }
 .nav li {
     display: block;
     float: none;
-    border: 0 none;
-    border-right: 1px solid #dedede;
-    /* gray */
+    border-top: 1px solid #dedede;  /* gray */
+    border-right: 1px solid #dedede;  /* gray */
+    border-left: 1px solid #dedede;  /* gray */
+    font-size: 18px;
 }
 .nav li:last-child {
     border-bottom: 0 none;
@@ -685,9 +686,9 @@ ul {
         height: 350px;
     }
     .blog-tease {
-        height: 210px;
+        height: 310px;
         color: #fff;
         min-height: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 }
