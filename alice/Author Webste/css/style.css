@@ -4,6 +4,31 @@
 
 /*Global*/
 
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    background-color: gold;
+    color: #fff;
+    padding: 10px 10px;
+    border: 0 none;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: background .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: goldenrod;
+}
+
+.page-header .btn {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.btn >i {
+    color: #fff;
+}
+
 .row-home {
     padding-top: 40%;
 }
