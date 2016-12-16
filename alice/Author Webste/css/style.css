@@ -1,0 +1,482 @@
+@import url(Grid.css);
+@import url(Form.css);
+@import url(Table.css);
+
+/*Global*/
+
+.row-home {
+    padding-top: 40%;
+}
+
+.main {
+    background-color: transparent;
+}
+
+.main a {
+    color: black;
+}
+
+.main h1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.main h3 {
+    font-family: 'Titillium Web', sans-serif;
+    color: firebrick;
+    font-size: 20px;
+}
+
+.main h2 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.main h4 {
+    font-family: 'Titillium Web', sans-serif, 700;
+    font-weight: 700;
+    font-size: 14px;
+    color: brown;
+    margin-left: 25px;
+    color: firebrick;
+}
+
+
+}
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+p {
+    font-family: 'Gentium Book Basic', serif;
+}
+li {
+    margin-bottom: 6px;
+}
+.text-center {
+    text-align: center;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    margin-bottom: 50%;
+}
+
+/*BOX SIZING*/
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.smaller {
+    background-color: aliceblue;
+}
+.smaller h1 {
+    font-size: 30px;
+}
+
+/*Content Box Details*/
+.header {}
+
+}
+.contentbox {
+    padding: 5px;
+    margin-bottom: 20 px;
+}
+.contentbox a {
+    color: #373737;
+}
+.contentbox img {
+    height: 200px;
+    width: auto;
+    display: block;
+    white-space: nowrap;
+}
+.contentbox>img {
+    margin-right: 15px;
+}
+.contentbox {
+    padding: 5px;
+    margin-bottom: 80px;
+}
+
+/*Contentbox HOME*/
+
+}
+.contentbox-gold img {
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+    position: relative;
+}
+.contentbox-gold h2 {
+    color: black;
+    font-family: 'Titillium Web',
+    sans-serif;
+    text-align: center;
+}
+.contentbox-gold h1 {
+    color: black;
+    font-family: 'Titillium Web',
+    sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Contentbox BOOK*/
+.contentbox-book {
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 80px;
+}
+.contentbox-book img {
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+    float: left;
+    width: 100px;
+    margin-right: 40px;
+}
+.contentbox-book p {
+    margin-bottom: 100px;
+    margin-left: 10px;
+}
+.contentbox-book h2 {
+    color: black;
+    font-family: 'Titillium Web',
+    sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Contentbox Other NAV*/
+.contentbox-other {
+    background-color: skyblue;
+    padding-bottom: 50px;
+    width: 100%
+}
+.contentbox-other h1 {
+    font-size: 30px;
+    padding-bottom: 50px;
+    width: 100%
+}
+
+/*Contentbox Other NAV*/
+.contentbox-white {
+    background-color: transparent;
+    padding-top: 55%;
+}
+
+/*Grid Columns, Rows*/
+.column {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.row {
+    overflow: hidden;
+}
+
+/* Header CSS */
+.brand {
+    padding-top: 50px;
+    font-family: 'Titillium Web',
+    sans-serif;
+}
+.brand a {
+    color: #fff;
+}
+.pull-right {
+    float: right;
+}
+
+/* HOME Mobile navigation */
+.menu-link {
+    position: absolute;
+    right: 50px;
+    /* adjust this value if need be */
+    top: 60px;
+    /* adjust this value if need be */
+}
+.nav {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    position: absolute;
+    /* zero height so nav is hidden */
+}
+.nav.active {
+    max-height: 25em;
+    /* after menu click, nav expands */
+}
+.nav.active a {
+    color: white;
+}
+.nav ul {
+    width: auto;
+}
+.nav li {
+    display: inline-block;
+    float: none;
+    border: 0 none;
+    border-right: 1px solid #dedede;
+    /* gray */
+}
+.nav li:last-child {
+    border-bottom: 0 none;
+    /* gray */
+    border-right: 0 none;
+}
+.nav a {
+    display: block;
+    padding: 15px;
+}
+
+}
+.nav a:hover,
+.nav a:focus {
+    color: orange;
+    /* turquoise */
+    background-color: transparent;
+}
+
+/* OTHER Mobile navigation */
+.nav {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    /* zero height so nav is hidden */
+}
+.nav2.active {
+    max-height: 25em;
+    /* after menu click, nav expands */
+}
+.nav2.active a {
+    color: black;
+}
+.nav2 ul {
+    width: auto;
+}
+.nav2 li {
+    display: inline-block;
+    float: none;
+    border: 0 none;
+    border-right: 1px solid #dedede;
+    /* gray */
+}
+.nav2 li:last-child {
+    border-bottom: 0 none;
+    /* gray */
+    border-right: 0 none;
+}
+.nav2 a {
+    color: black;
+    display: block;
+    padding: 15px;
+}
+.nav2 a:hover,
+.nav2 a:focus {
+    color: orange;
+    /* turquoise */
+    background-color: transparent;
+}
+@media (min-width: 480px) {}
+
+/* tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* Global */
+    .contentbox .one-half {
+        width: 344px;
+    }
+    /* Portfolio */
+    .portfolio-item {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .portfolio-title {
+        color: black;
+        text-align: center;
+        height: 243px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        padding: 10px;
+        -webkit-transition: opacity 0.3s ease 0s;
+        -moz-transition: opacity 0.3s ease-out;
+        -ms-transition: opacity 0.3s ease-out;
+        -o-transition: opacity 0.3s ease-out;
+        transition: opacity 0.3s ease 0s;
+    }
+    .portfolio-title:hover,
+    .portfolio-title:focus {
+        opacity: .9;
+        background-color: #5adae2;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    .nav {
+        padding-top: 60px;
+        max-height: none;
+        width: 80%;
+    }
+    .nav ul {
+        width: auto;
+    }
+    .nav li {
+        display: inline-block;
+        border: 0 none;
+        border-right: 1px solid #dedede;
+        /* gray */
+    }
+    .nav li:last-child {
+        border-bottom: 0 none;
+        border-right: 0 none;
+    }
+    .nav a {
+        padding: 0px 10px;
+        transition: all .15 ease-in-out;
+        color: white;
+        font-family: 'Titillium Web',
+        sans-serif;
+    }
+    .nav a:hover {
+        color: firebrick;
+        background-color: transparent;
+    }
+    .nav a:hover,
+    .active a {
+        color: firebrick;
+        background-color: transparent;
+    }
+    /* mobile nave */
+    .menu-link {
+        display: none;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* ... place updated global rules here ... */
+    /* Global */
+    .contentbox .one-half {
+        width: 440px;
+    }
+    /* Portfolio */
+    .portfolio-title {
+        height: 308px;
+    }
+    .portfolio-title h2 {
+        margin-top: 40px;
+    }
+    /* blog*/
+    .sidebar {
+        padding: 30px;
+    }
+    .map iframe {
+        width: 620px;
+        height: 350px;
+    }
+}
+
+/* Main content*/
+.page-header {
+    color: black;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+}
+.page-header p {
+    padding-left: 15px;
+}
+
+/* Footer content*/
+.footer {
+    background-color: firebrick;
+}
+.footer p {
+    color: #fff;
+}
+.footer a {
+    color: #fff;
+}
+.footer-bottom a {
+    color: white;
+}
+.footer-bottom a:hover {
+    color: navajowhite;
+}
+.footer a:hover,
+.footer i:hover {
+    color: navajowhite;
+}
+
+/* ASIDE content*/
+.review img {
+    float: left;
+    padding-right: 10px;
+}
+.sidebar-form input[type="text"] {
+    height: 30px;
+    width: 125px;
+    padding: 0;
+    margin-bottom: 2px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+.sidebar-form .btn {
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0 none;
+    -webkit-transition: background 0.5s ease 0s;
+    -moz-transition: background 0.5s ease 0s;
+    transition: background 0.5s ease 0s;
+}
+.sidebar {
+    padding: 10px;
+    background-color:skyblue;
+}
+.sidebar img {
+    height:70px;
+    float: left;
+    padding: 8px;
+}
