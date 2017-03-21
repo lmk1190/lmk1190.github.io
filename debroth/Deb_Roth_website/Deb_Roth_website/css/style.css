@@ -1,5 +1,7 @@
-.img-float {
-    float: left;
+.center {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .page-scroll {
@@ -205,8 +207,8 @@ fieldset[disabled] .btn-xl:hover {
 }
 .navbar-custom .navbar-brand {
     color: #c02004;
-    font-family: "brush-script-std", sans-serif;
-    font-weight: 400;
+    font-family: "freight-micro-pro", sans-serif;
+    font-weight: 700;
 }
 .navbar-custom .navbar-brand.active,
 .navbar-custom .navbar-brand:active,
@@ -242,6 +244,20 @@ fieldset[disabled] .btn-xl:hover {
     color: #c02004;
     background-color: #e2dfde
 }
+@media (min-width:767px) {
+    .center {
+        display: block;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    
+    .img-float {
+        float: center;
+        margin-bottom: 20px;
+    }
+}
+
+}
 @media (min-width:768px) {
     .navbar-custom {
         background-color: transparent;
@@ -251,23 +267,29 @@ fieldset[disabled] .btn-xl:hover {
         transition: padding .3s;
         border: none
     }
-    
+    .img-float {
+        float: left;
+        margin-bottom: 20px;
+    }
+    .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+    }
     .navbar-custom .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s
     }
-    
     .navbar-custom .navbar-nav>.active>a {
         border-radius: 3px
     }
-    
     .navbar-custom.affix {
         background-color: #222;
         padding: 10px 0
     }
-    
     .navbar-custom.affix .navbar-brand {
         font-size: 1.5em
     }
@@ -291,7 +313,10 @@ header {
         padding-top: 300px;
         padding-bottom: 200px
     }
-    
+    .img-float {
+        float: left;
+        margin-bottom: 20px;
+    }
     header .intro-text .intro-lead-in {
         font-family: "soleil", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 40px;
@@ -299,7 +324,6 @@ header {
         line-height: 40px;
         margin-bottom: 25px;
     }
-    
     header .intro-text .intro-heading {
         font-family: "soleil", "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
@@ -318,29 +342,24 @@ header {
         transition: padding .3s;
         border: none
     }
-    
     .navbar-custom .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s
     }
-    
     .navbar-custom .navbar-nav>.active>a {
         border-radius: 3px
     }
-    
     .navbar-custom.affix {
         background-color: #cecece;
         color: #c02004;
         padding: 10px 0
     }
-    
     .navbar-custom.affix .navbar-brand {
         font-size: 1.5em;
         color: #c02004;
     }
-    
     .navbar-custom .nav li a,
     .navbar-custom .navbar-toggle {
         font-family: "soleil", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -379,32 +398,31 @@ agency.min.css:530 .timeline .timeline-body>p,
     .timeline:before {
         left: 50%
     }
-    
     .timeline>li {
         margin-bottom: 100px;
         min-height: 100px
     }
-    
+    .img-float {
+        float: left;
+        margin-bottom: 20px;
+    }
     .timeline>li .timeline-panel {
         width: 55%;
         float: right;
         padding: 0 20px 20px 30px;
         text-align: left
     }
-    
     .timeline>li .timeline-image {
         width: 100px;
         height: 100px;
         left: 50%;
         margin-left: -50px
     }
-    
     .timeline>li .timeline-image h4 {
         font-size: 13px;
         margin-top: 16px;
         line-height: 18px
     }
-    
     .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
         text-align: left;
@@ -416,17 +434,18 @@ agency.min.css:530 .timeline .timeline-body>p,
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px
     }
-    
     .timeline>li {
         min-height: 150px
     }
-    
+    .img-float {
+        float: left;
+        margin-bottom: 20px;
+    }
     .timeline>li .timeline-image {
         width: 150px;
         height: 150px;
         margin-left: -75px
     }
-    
     .timeline>li .timeline-image h4 {
         font-size: 18px;
         margin-top: 30px;
@@ -437,25 +456,20 @@ agency.min.css:530 .timeline .timeline-body>p,
     .timeline>li {
         min-height: 170px
     }
-    
     .timeline>li .timeline-panel {
         padding: 0 20px 20px 100px
     }
-    
     .timeline>li .timeline-image {
         width: 170px;
         height: 170px;
         margin-left: -85px
     }
-    
     .timeline>li .timeline-image h4 {
         margin-top: 40px
     }
-    
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px
     }
-    
     png {
         float: left;
         margin: 0 0 10px 10px;
@@ -471,7 +485,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "soleil", Helvetica, Arial, sans-serif;
+    font-family: "soleil",
+    Helvetica,
+    Arial,
+    sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -499,7 +516,11 @@ section#contact {
     color: #fff;
 }
 .btn-xl {
-    font-family: "soleil", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "soleil",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
@@ -510,10 +531,14 @@ h2,
 h3,
 h5,
 h6 {
-    font-family: "soleil", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "soleil",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #7d7a76;
+    color: #c02004;
 }
 .btn-primary {
     color: #fff;

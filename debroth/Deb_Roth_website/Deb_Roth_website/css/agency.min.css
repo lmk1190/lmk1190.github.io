@@ -420,6 +420,13 @@ footer ul.quicklinks {
     }
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
 .timeline {
     list-style: none;
     padding: 0;
@@ -635,7 +642,6 @@ section#contact {
     background-position: center;
     background-repeat: no-repeat
 }
-
 
 section#contact .section-heading {
     color: #fff
